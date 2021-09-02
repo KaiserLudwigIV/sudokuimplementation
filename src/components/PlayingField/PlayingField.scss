@@ -18,3 +18,18 @@
 		}
 	}
 }
+.gameInput {
+	display: block;
+	font-size: 1.4rem;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	border: 3px solid black;
+	&:focus {
+		background-color: turquoise !important;
+		outline: none;
+		pointer-events: none;
+		caret-color: transparent;
+	}
+}

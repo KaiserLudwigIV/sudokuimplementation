@@ -22,7 +22,12 @@ const PlayingField = (props: Props) => {
 			}}
 		>
 			{game.map((evt, ind) => (
-				<Section key={ind} size={props.settings.size} fields={evt} />
+				<Section
+					key={ind}
+					size={props.settings.size}
+					fields={evt}
+					difficulty={props.settings.difficulty}
+				/>
 			))}
 		</section>
 	);

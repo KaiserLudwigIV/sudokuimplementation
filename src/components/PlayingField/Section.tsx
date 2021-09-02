@@ -5,6 +5,7 @@ import { Field } from "./Field";
 interface Props {
 	size: number;
 	fields: sudokuField[];
+	difficulty: number;
 }
 
 const Section = (props: Props) => {
@@ -16,7 +17,12 @@ const Section = (props: Props) => {
 			}}
 		>
 			{props.fields.map((e: sudokuField, ind: number) => (
-				<div key={ind}>{e.value}</div>
+				<Field
+					key={Math.random() * 1000}
+					inputValue={
+						Math.random() > props.difficulty ** 1.7 * 0.1 ? e.value : undefined
+					}
+				/>
 			))}
 		</div>
 	);
