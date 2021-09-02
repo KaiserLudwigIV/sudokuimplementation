@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Bebas;
+}
+body {
+	background-color: rgb(27, 27, 27);
+}
+h1 {
+	color: white;
+	font-size: 3rem;
+	padding: 1rem 0;
+}
+h2 {
+	color: white;
+}
+#GameContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
